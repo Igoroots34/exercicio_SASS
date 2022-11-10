@@ -33,13 +33,6 @@ header {
     }
 }
 
-// header .container {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 16px 0;
-// }
-
 .menu {
     display: flex;
 
@@ -102,31 +95,36 @@ section {
             text-decoration: none;
             font-weight: bold;
             font-size: 24px;
+
+            &:hover {
+                background-color: variaveis.$corBtnSecundaria;
+            }
         }
         
-        .product-button:hover {
-            background-color: variaveis.$corBtnSecundaria;
-        }
     }
 }
 
 @media screen and (max-width: variaveis.$tablet) {
     .container {
-        max-width: 90%;
+        max-width: 80%;
     }
 
-    .products {
+    section .products {
         grid-template-columns: repeat(2, 48.5%);
         column-gap: 3%;
     }
 }
 
 @media screen and (max-width: variaveis.$mobile) {
-    .products {
-        display: block;
+    .container {
+        max-width: 90%;
     }
-
-    .product-item  {
-        margin-bottom: 32px;
+    
+    section .products {
+        display: block;
+        
+        .product-item  {
+            margin-bottom: 32px;
+        }
     }
 }

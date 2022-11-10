@@ -97,18 +97,21 @@ section .products .product-button:hover {
 
 @media screen and (max-width: 1023px) {
   .container {
-    max-width: 90%;
+    max-width: 80%;
   }
-  .products {
+  section .products {
     grid-template-columns: repeat(2, 48.5%);
     column-gap: 3%;
   }
 }
 @media screen and (max-width: 767px) {
-  .products {
+  .container {
+    max-width: 90%;
+  }
+  section .products {
     display: block;
   }
-  .product-item {
+  section .products .product-item {
     margin-bottom: 32px;
   }
 }
