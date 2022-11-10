@@ -20,14 +20,25 @@ header {
     position: sticky;
     top: 0;
     left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+
+    img {
+        max-width: 70px;
+    }
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
-}
+// header .container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 16px 0;
+// }
 
 .menu {
     display: flex;
@@ -40,6 +51,7 @@ header .container {
         a {
             color: variaveis.$corDoTexto;
             text-decoration: none;
+            font-size: 24px
         }
     }
 }
@@ -49,6 +61,7 @@ section {
 
     h2 {
         color: variaveis.$corDoTexto;
+        font-size: 32px;
     }
 
     .products {
@@ -61,12 +74,21 @@ section {
         list-style: none;
     
         img {
+            max-width: 22em;
             width: 100%;
             border-radius: 16px;
         }
     
-        h4, p {
+        h4 {
+            font-size: 24px;
             color: variaveis.$corDoTexto;
+            margin-top: 8px;
+        }
+
+        p {
+            font-size: 16px;
+            color: variaveis.$corDoTexto;
+            margin-top: 8px;
         }
 
         .product-button {
@@ -79,6 +101,7 @@ section {
             margin-top: 8px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 24px;
         }
         
         .product-button:hover {
