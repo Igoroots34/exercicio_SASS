@@ -1,6 +1,5 @@
 @use 'config/reset';
 @use 'config/variaveis';
-@use 'sass:math';
 
 body {
     background-color: variaveis.$corDoFundo;
